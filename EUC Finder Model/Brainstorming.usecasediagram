@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="5e9c88ca-2ae7-45f1-9667-638dee39aaf0" name="UMLUseCaseDiagram1" linkedPackageId="11fab94c-4b8b-494d-abe6-d1748c7dda34" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="540e8275-b3c4-403f-b716-0b3909687a4a">
+      <elementDefinition Id="ff7aa709-c102-4a6b-9c6e-753a6a3d94f0" />
+      <body>View Application Info
+Register
+Log In
+Locate University/ College
+- View Location
+- View Route
+- View Offered Engineering Program/s 
+- Clear Overlays
+- View Address
+- View Distance
+- View Latitude/  Longitude</body>
+    </comment>
+    <comment Id="e386ec30-3d1b-4b6f-9202-116eb749fa36">
+      <elementDefinition Id="0ae42258-8413-4fee-9c58-9249870d61b0" />
+      <body>Constraints:
+
+- This application only holds engineering courses.
+- This application only holds Metro Manila area universities and colleges.
+- Users might prefer other apps since this application only cover Metro Manila Area</body>
+    </comment>
+    <comment Id="61fb89b1-03f1-41e9-b346-85887072b118">
+      <elementDefinition Id="9764318b-57df-4ef3-a33a-aaf8ddafc416" />
+      <body>Maintain Record
+Locate University/ College</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="e4e1c140-b97c-4f20-868e-dd1d79ef5603" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4e817923-3bc6-4f8b-9e8e-f22c4589ce9c" />
+        <targetEnds>
+          <association Id="6fc5cd5e-920c-4be7-8746-273374815587" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Engineering Universities and Colleges" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="a5ca7426-f94f-46e0-aa0e-370490126fd9" LastKnownName="EUC Finder" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="12034f74-d766-4aa4-a2cf-a8f7afce75a1" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f51404c4-6cf5-48ae-add0-86f5657deae8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="683bebba-d173-4dc8-94dd-551ce3af7a69" name="Engineering Universities and Colleges" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="72f78801-8cb7-44a3-beca-c7cb6aaf0e45" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d8e7b931-175a-4b20-845f-3735d74cdc17" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="6b8c23d3-a8c9-49cc-8183-79ceb23e2b45" name="Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6ac8538b-f908-4c14-903e-7af2f765a053" />
+        <targetEnds>
+          <association Id="1d52423c-440b-4bb0-a033-3b3897af360d" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Engineering Universities and Colleges" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="a5ca7426-f94f-46e0-aa0e-370490126fd9" LastKnownName="EUC Finder" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="483ec752-72d4-427f-b22d-9e5d15f83675" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="35cc2916-ff40-477e-ae8b-ae44beb3e101" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2f8a4af3-d521-46e2-af02-e407f6616c56" name="Engineering Universities and Colleges" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="99d8b542-2192-4c95-a86e-5581eed2ac56" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aa8231e9-2a08-4e51-912c-236950ef50b2" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="a5ca7426-f94f-46e0-aa0e-370490126fd9" name="EUC Finder" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <ownedCommentsInternal>
+          <comment Id="38874eb1-3494-4c84-93d9-39dcced06dd9">
+            <elementDefinition Id="8f340bb7-c06d-4a7d-bc50-1861e28c22b1" />
+            <body>Vision Statement:
+
+Engineering Universities and Colleges (EUC) Finder is an application wherein we let users locate and see directions to the of the desired enginireeng university/ college within manila.</body>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="6b31c35b-5347-4e05-9ada-6dbd54c3ebfc" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="11fab94c-4b8b-494d-abe6-d1748c7dda34" name="EUC Finder Model">
+    <elementDefinition Id="82e7b04b-e03b-4588-8365-f4a9dfb23eb6" />
+    <profileInstances>
+      <packageHasProfileInstances Id="8a87b05d-6a76-47c4-8487-6e08477ea3e3">
+        <profileInstance Id="8f3e0669-6a66-4c8d-91ac-c85af88b1a39" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="1551a41f-d9b2-408d-91d5-0d06b11ca0ca">
+        <profileInstance Id="2252afdd-0f68-4073-acf2-de01b3f9cd7d" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

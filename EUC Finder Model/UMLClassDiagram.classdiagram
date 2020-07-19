@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="52bf047b-22c0-491c-9dbe-92e004fc4997" name="UMLClassDiagram" linkedPackageId="e5463094-6193-4bd9-b534-3cf024973c10" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="6bc21a4f-a6ee-48a9-a068-98df76c2c2a8" name="Admin Process" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="75509729-eab8-4b40-9813-cf6d676b3e9b" />
+        <ownedLiterals>
+          <enumerationLiteral Id="57563ee3-b18d-4e71-be0b-f3141b41720f" name="Show Some University/ College Info">
+            <elementDefinition Id="3a689fb6-16a0-4b13-99c1-b251f7895349" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="d155d173-0bc9-4cb1-9746-d97e7f52ccb3" name="Save User Credentials">
+            <elementDefinition Id="73a7a10d-7c86-4f35-8e2b-c8f1c8790ad2" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="5a833d43-0af7-4e3e-8de3-df4e1ea3f7ec" name="Show University/ College Location">
+            <elementDefinition Id="c44765dc-1e43-4a3c-94ae-a846d7fe5756" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="3451cd9c-897b-4493-8336-da972ae16db5" name="Show Directions to University/ College">
+            <elementDefinition Id="5fc96b42-6080-4a26-a61c-5c7452c53803" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="3701b9a4-7c91-4e86-8142-11ff6f1f7007" name="Create File">
+            <elementDefinition Id="35e46da5-4996-4342-8dca-951a0535ceb5" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="9bb43272-b1b3-4710-974e-86a36b9a64d5" name="Check User's Log In">
+            <elementDefinition Id="19d593c7-c990-4722-bbb0-75b6c313bfc7" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="94311c98-139c-4602-baa2-f76cf808754a" name="User" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="eb0661dc-3610-4298-858b-392ef121b7d2" />
+        <targetEnds>
+          <association Id="2100d81c-dfe2-4e73-b904-c78d218a7909" isDerived="false" sourceEndRoleName="User" targetEndRoleName="User Process" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="b9ec8d13-84b8-44e8-a32b-2416de67d07a" LastKnownName="User Process" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7964a694-56e8-46b7-a1ae-e923a0fd8e7f" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d4e1dcbe-f0a7-495f-8925-0e159a691e4c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1957a1a4-67cd-4d3f-ae7f-1afc52f8a5a9" name="User Process" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9828b01e-b58d-4c69-95e3-684a531b5708" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d94885e2-b92c-4ac1-bfbc-1aea0290c7fc" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a3ab238f-7c15-46e6-b72d-3a1cb2ca188b" name="Register" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b049e3ac-3fd7-49a9-b1ef-1d498dbd48c5" />
+          </property>
+          <property Id="45755005-7736-4a3f-9372-c650c0912b46" name="Log In" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f460a2dc-e399-4a15-8a2b-0fe2e78c6bcd" />
+          </property>
+          <property Id="b5ec1aa9-befe-4e95-94c4-d449037efe5b" name="Locate University" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eb3e5014-0a8d-417d-9046-31edc1d5b7bd" />
+          </property>
+          <property Id="954fd2e3-b346-4c5f-b41b-8da6d3c2357d" name="Go to Main Menu" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="85e0b088-4758-40e7-b4ae-d6d1b1ebfa57" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7fc4f6f2-c744-405a-8c91-8f82cffa46cf" name="Admin" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ba5793db-9ed5-4be0-bc67-e7b94f8a5f95" />
+        <targetEnds>
+          <association Id="34bed454-73d4-4ba7-a30a-dbd1795d214b" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Admin Process" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="6bc21a4f-a6ee-48a9-a068-98df76c2c2a8" LastKnownName="Admin Process" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fe20d4e2-531f-4563-90b0-761c9417f07a" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="172f1818-2988-438f-b985-c3f15d2baeba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6c4bff89-12cb-4eee-858f-7f01067c3249" name="Admin Process" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="136da5b0-3fbf-4379-a107-89164d32339c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6539b140-7317-4185-81c6-2ccd57bdc293" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="8f316dbf-569a-41b8-9b66-577fdd281954" name="Maintain Record" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="74038a23-25e5-4ede-8638-a08a9b07fda5" />
+          </property>
+          <property Id="a2d9ac03-c336-46a8-b4a8-aafabb86cb88" name="Locate University/ College" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="afd3ba21-a5e6-4125-89f7-27fe1483c172" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="b9ec8d13-84b8-44e8-a32b-2416de67d07a" name="User Process" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2f658106-1c03-4488-8521-b367b10db22c" />
+        <targetEnds>
+          <association Id="f055264d-b75d-44b1-bf3a-a5e64c681068" isDerived="false" sourceEndRoleName="User Process" targetEndRoleName="Admin" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7fc4f6f2-c744-405a-8c91-8f82cffa46cf" LastKnownName="Admin" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="67be118a-1c43-4eeb-9922-3d03a9a91992" name="User Process" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6cb9d0fe-f809-4a97-ad8f-f0779782a59d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1cca3d6d-701d-4baa-b8d4-3b7ee253c325" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d3ddf1ad-6306-4aa3-8694-768fa1c4e9eb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2b183180-c9da-4b93-bf40-a768e53321b0" />
+          </association>
+        </targetEnds>
+        <ownedLiterals>
+          <enumerationLiteral Id="68bae05b-0325-4444-a094-d7eb2c8f2870" name="See University/ College Location">
+            <elementDefinition Id="5e01c66b-6db1-4761-9020-ef5ec38ef001" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="9d7cb060-55ad-44ed-a2ce-02b77fd80a42" name="See Directions to University/ College">
+            <elementDefinition Id="af95299c-2cc8-4292-b4d6-334a419853c5" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="6bb85c63-9c10-4619-b19c-852326c0082e" name="Select a University/ College">
+            <elementDefinition Id="4ffdd5ce-d695-4816-bae9-152c51418c2d" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="8ff6a84c-ef12-4fdb-a1ad-72fdbd05058d" name="Enter Credentials">
+            <elementDefinition Id="0205822d-543d-48d3-8353-5ac64bcdfba9" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="e5463094-6193-4bd9-b534-3cf024973c10" name="EUC Finder Model">
+    <elementDefinition Id="82e7b04b-e03b-4588-8365-f4a9dfb23eb6" />
+    <profileInstances>
+      <packageHasProfileInstances Id="320d9647-bb8f-4c86-b8b9-4afde7a431bf">
+        <profileInstance Id="e82dc51e-6b3c-4e22-bc40-551da4d12df9" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6fbe76aa-d31b-4b7c-808a-fb76c8ef6bf1">
+        <profileInstance Id="f6a31d6e-7cd6-4588-ba56-e49b4fae937c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

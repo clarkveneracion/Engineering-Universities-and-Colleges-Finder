@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="cc1feb2a-49d6-4d88-8fdb-84425615f07d" name="Admin" linkedPackageId="672ad6b1-42b7-4927-a58d-91f81161cae5" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="c239d039-5fb3-4374-9b21-d3faf0f78b72" name="Admin" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="858b824f-d156-4eaa-ac10-33d2f61efcbc" />
+        <targetEnds>
+          <association Id="db5c59da-9196-4090-9d77-e8f9cc7514ee" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Maintain Record" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6090f040-203d-4bb8-acee-d6556e55c0f7" LastKnownName="Manage Accounts" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="be64fad3-f654-472c-8e48-3d92bddab0eb" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5507cae4-74a7-48a2-9c7c-e8f68b38c2bc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7132d302-d046-4e17-80ea-3638f3ceffb3" name="Maintain Record" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d4cea711-f429-433a-b20d-5106330c4290" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3f069d69-3175-4612-8c7c-7e55e2b0c465" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="6090f040-203d-4bb8-acee-d6556e55c0f7" name="Manage Accounts" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c09ee07b-e08f-4942-bacd-af8b5d949cd8" />
+        <additions>
+          <include Id="59cf5d6b-1332-4b08-8ec5-0567be89ef5d">
+            <useCaseMoniker Id="594ee2b6-31ac-4894-873c-61e9dbf86747" LastKnownName="Compare Registered Users' Credentials" />
+            <elementDefinition Id="afcdecbe-c06d-4636-8633-84a450d76b8f" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0c4ee565-f3e0-4a47-93d5-9bb7c1262a36" name="Register User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="55cc0c23-e48e-451f-bd62-30850c30d3d9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="afbea981-a7e6-4a2e-a8c9-e7b2ac870da1" name="Save Credentials" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="681d901f-6237-42ab-ad13-8b437f76ec8d" />
+        <additions>
+          <include Id="de49d50b-7907-4d5e-ba95-1a8affd2eec8">
+            <useCaseMoniker Id="0c4ee565-f3e0-4a47-93d5-9bb7c1262a36" LastKnownName="Register User" />
+            <elementDefinition Id="403e9fee-c1e1-4280-a561-ef65530a9072" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5a25c96f-8fd3-4ae5-81a5-e0d1cc3cfe5e" name="Accept User's Log In" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d586cb16-69c5-41ac-8035-da3fb7f1733e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="594ee2b6-31ac-4894-873c-61e9dbf86747" name="Compare Registered Users' Credentials" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6db38a34-3720-417a-b882-2cc78b50ca74" />
+        <additions>
+          <include Id="508b375a-5523-4d07-ac7b-9914ea20eb85">
+            <useCaseMoniker Id="5a25c96f-8fd3-4ae5-81a5-e0d1cc3cfe5e" LastKnownName="Accept User's Log In" />
+            <elementDefinition Id="b33b9b76-0d18-4f5a-ad4c-ec2118b4cdb5" />
+          </include>
+          <include Id="1e01b1f6-4c71-4d0b-aa81-b4c46050764d">
+            <useCaseMoniker Id="afbea981-a7e6-4a2e-a8c9-e7b2ac870da1" LastKnownName="Save Credentials" />
+            <elementDefinition Id="e8f4a880-d0c1-4cd0-bf9f-d97c4e3fb462" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="672ad6b1-42b7-4927-a58d-91f81161cae5" name="EUC Finder Model">
+    <elementDefinition Id="82e7b04b-e03b-4588-8365-f4a9dfb23eb6" />
+    <profileInstances>
+      <packageHasProfileInstances Id="36fb9be7-4488-4800-a981-a93c58b99704">
+        <profileInstance Id="c88758b4-02b3-45bf-818a-5237286a8f8b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="427f131f-b8a5-448e-b133-9b893c255556">
+        <profileInstance Id="4eedd09a-58a7-4d79-bc66-a6716b799c86" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="5c0f5d58-8055-41e1-974c-8675826c0f85" name="Model" linkedPackageId="b749b3da-b65a-42b3-97bb-d2e1ca219c52" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ea173a96-61f4-40a5-8ba2-2ed2020ecac1" name="Admin" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="52d6958e-a1fd-4aca-99b9-25e96420c7a3" />
+        <targetEnds>
+          <association Id="1245f951-3f74-49ff-abc3-a25cb85033ed" isDerived="false" sourceEndRoleName="Admin" targetEndRoleName="Application" isLeaf="false" isAbstract="false">
+            <classMoniker Id="4b6530a5-bb9c-44ac-a2f7-1c6eaeef785f" LastKnownName="Application" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3c0581e5-3611-4faa-a297-06a4cd7d2e28" name="Admin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="61899207-727c-4bc1-bc51-a8a078cc873f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="22bc4c3a-1426-4134-8326-ca3a3aa18d4d" name="Application" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3a6bc253-ab8d-4645-ad66-5a3466e14072" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b1a71d0b-d455-43af-bade-424c48901391" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="3bc3b760-b52c-4985-a2a7-f53a8c042257" name="Maintain Record" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="376bc609-6686-4161-bb06-dde4e29a1139" />
+          </property>
+          <property Id="9900cb9c-dc96-4ef2-a9dd-d585b16837e7" name="Locate University/ College" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9cd02b68-b883-4437-879f-542ba7ba97b8" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="797b4ba3-e3af-497f-ab68-b148a07a4c7a" name="User" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="51ae3662-b930-4204-b39a-de9102fc251f" />
+        <targetEnds>
+          <association Id="316950e0-cd81-4491-94db-6aff6c2f0f0b" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Application" isLeaf="false" isAbstract="false">
+            <classMoniker Id="4b6530a5-bb9c-44ac-a2f7-1c6eaeef785f" LastKnownName="Application" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ea2b9980-9122-45fc-bebb-58a66982eb8e" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d0b9375d-45e5-4ebd-b4e8-d4c5a01536a1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa078755-6f09-4c59-9ecb-5a56f2a574de" name="Application" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="961767c2-6c8d-4656-9585-49a418799df4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="88baa125-ab67-44f4-9abd-c7b7bf23baab" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="f7a788b5-23cc-4f08-8bb3-545d78c10a1f" name="Log In" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="868729cc-13b4-4a82-aa6f-edf0f36b328a" />
+          </property>
+          <property Id="09fa4552-0927-45fa-a867-3f6e310858d7" name="Register" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8216dcd9-cc30-456c-83e3-338184d05a59" />
+          </property>
+          <property Id="32fba474-4b1d-46b8-b20e-0f041bba438f" name="Locate University/ College" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7d1e31cb-c1ef-4611-996d-e6d2b3828983" />
+          </property>
+          <property Id="0e9b4bd9-56fd-41c2-b303-5819f03834b0" name="Go to Main Menu" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="094dd41f-0bad-49d2-a200-22b2c1fd4698" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4b6530a5-bb9c-44ac-a2f7-1c6eaeef785f" name="Application" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9f4dec97-b84d-4fd8-aa9a-5c242823e6e7" />
+        <ownedAttributesInternal>
+          <property Id="685c024f-8455-446e-a843-c3089d419f03" name="Accept User Command" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="10520b40-f6a0-481d-91c6-fd299cfb928c" />
+          </property>
+          <property Id="13579aee-8405-4aa7-88bc-2e993978f22b" name="Accept Admin Command" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e834735b-6000-4ae2-8699-f928fbd1a681" />
+          </property>
+          <property Id="3dd416a0-e9b0-40ab-9a80-03cd596daf87" name="Process Commands" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d293dabe-df1f-422a-87d0-e765eaf9955a" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9f97427b-a42f-4108-8792-8e78f71d7ff9" name="Internet Connection" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9a600668-318a-4442-888b-d38a8b019d04" />
+        <targetEnds>
+          <association Id="47b91be2-1749-484f-b41b-d42fe1bd7c25" isDerived="false" sourceEndRoleName="Internet Connection" targetEndRoleName="Application" isLeaf="false" isAbstract="false">
+            <classMoniker Id="4b6530a5-bb9c-44ac-a2f7-1c6eaeef785f" LastKnownName="Application" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="849279f6-5d10-4c90-82f3-926c63da5837" name="Internet Connection" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a9ad2845-f7ce-4494-8759-81999d966bf2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="299727e6-246f-4417-a624-f55c72e860c0" name="Application" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="004766f9-bfce-4654-a67f-c560ad9d195b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f589c6eb-ab3c-4cee-97a3-b38150182dd6" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="6653c56e-a784-487a-8a54-cf7d49ba586b" name="Provide Map" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="02312a3c-c5b3-479d-94f3-1c74b3f25329" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="b749b3da-b65a-42b3-97bb-d2e1ca219c52" name="EUC Finder Model">
+    <elementDefinition Id="82e7b04b-e03b-4588-8365-f4a9dfb23eb6" />
+    <profileInstances>
+      <packageHasProfileInstances Id="3c41caed-8d88-4794-8b2f-bd64c5e98616">
+        <profileInstance Id="c9e05077-33ef-4de8-8ddf-7aa30ed6671f" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d64e7979-cb9b-4d63-87c4-40a1990ea4b5">
+        <profileInstance Id="a7693fb6-5c6e-469f-8999-5832ba0d27fa" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

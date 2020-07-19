@@ -1,0 +1,2211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="82e7b04b-e03b-4588-8365-f4a9dfb23eb6"
+  name="EUC Finder Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="ff7aa709-c102-4a6b-9c6e-753a6a3d94f0">
+      <body>View Application Info
+Register
+Log In
+Locate University/ College
+- View Location
+- View Route
+- View Offered Engineering Program/s 
+- Clear Overlays
+- View Address
+- View Distance
+- View Latitude/  Longitude</body>
+    </comment>
+    <comment
+      Id="0ae42258-8413-4fee-9c58-9249870d61b0">
+      <body>Constraints:
+
+- This application only holds engineering courses.
+- This application only holds Metro Manila area universities and colleges.
+- Users might prefer other apps since this application only cover Metro Manila Area</body>
+    </comment>
+    <comment
+      Id="9764318b-57df-4ef3-a33a-aaf8ddafc416">
+      <body>Maintain Record
+Locate University/ College</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="50d8c515-4bd2-4c1b-ad26-99547ba3b50d"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="1dc73ee3-7bbc-4d38-bd34-ed8d981eafd2"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Create an Account"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="154944ee-7a61-4ed8-a22e-7a03c4fcded4"
+              LastKnownName="Create an Account"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0c2be630-fa9d-4f04-8d96-fcd80ae8b754"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1fa375af-7cac-4aa9-87b5-6085ed87ec8a"
+                  name="Create an Account"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0f44ffad-790c-4be4-a86c-aed093dea879"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Log In Account"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c85b1acc-d34d-49b2-befa-47b728a23bca"
+              LastKnownName="Log In Account"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ed081796-a72e-4f1b-a32c-35630aed6c12"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0139cce1-57cf-434a-8a8c-2e2028b192ce"
+                  name="Log In Account"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6f70906f-19dc-444f-ab3f-7bc87d6fb2df"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Choose an Engineering Program"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="66e5623f-449e-4a79-a600-a1cf1a9be1f9"
+              LastKnownName="Choose a Program"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="918cf678-9e15-4b85-8358-09ee3041f8b0"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b5e0166a-a900-4105-9982-a3d7a9e2a4ee"
+                  name="Choose an Engineering Program"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cc670794-0d47-45b6-8e04-22ed36b3e1e5"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Choose a Universtiy or College"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="90c731ef-97b1-49ba-a044-b226660b8814"
+              LastKnownName="Choose a Universtiy / College"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="18ac7d64-8a71-4c24-8a59-faae191fa8e5"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9460aa21-5247-4b9f-97a1-6a14d356d0b1"
+                  name="Choose a Universtiy or College"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a18e974a-8935-465b-b594-a4c59b3499ae"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Locate &amp; see Directions"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f46b6286-8715-4191-b02e-1a6461a52a10"
+              LastKnownName="See University/ College Location"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cce3fd3d-282d-488b-a35b-95ca5c621ae3"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="007e5ef1-6a60-4e08-965e-1602f391ea69"
+                  name="Locate &amp; see Directions"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="60dae848-90c7-4278-a8b8-eec85c59b579"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Exit"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7543c0ff-54a9-4231-8351-44840ee181e8"
+              LastKnownName="Close/ Exit Application"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8ee6f62b-3c7c-4822-8ecb-704087e40eb6"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6f51de0b-2ec8-4275-83ce-beddb3aea528"
+                  name="Exit"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="392386ea-c7f7-4bd9-baa5-aa7570e4c9b0"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="See directions to University/ College"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7f63ac63-c98c-40f1-bc2e-327b672a3a7a"
+              LastKnownName="See directions to University/ College"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3fa08691-a5af-43e5-878e-520203f9a044"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1ef14df6-e349-44e3-a953-f32eb59975da"
+                  name="See directions to University/ College"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="154944ee-7a61-4ed8-a22e-7a03c4fcded4"
+        name="Create an Account"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="76dcd9ad-13e4-4da1-b3fd-f92adc79f4e8">
+            <useCaseMoniker
+              Id="78b5b618-c783-49a1-ae17-8ca5f3b036ef"
+              LastKnownName="Create a Nickname"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </dependency>
+          <dependency
+            Id="d17bdf3d-a94e-433b-ab04-aa22ffe80e9b">
+            <useCaseMoniker
+              Id="78150a5f-e73e-47a2-a872-d07b0e06a585"
+              LastKnownName="Create a Username"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </dependency>
+          <dependency
+            Id="6c886904-7db9-44e9-8691-e423314febda">
+            <useCaseMoniker
+              Id="48b1a85e-c650-4fa7-8583-45139177c9cd"
+              LastKnownName="Create a Password"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c85b1acc-d34d-49b2-befa-47b728a23bca"
+        name="Log In Account"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="c7a95fe6-ad67-4c0b-b7bc-4aff7b36cd09">
+            <useCaseMoniker
+              Id="0225960e-e292-4c9e-a26a-7162a1f1bb15"
+              LastKnownName="Enter Existing Username"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </dependency>
+          <dependency
+            Id="76c6e97b-31f7-4ff3-a4e7-5306a8f9bfcf">
+            <useCaseMoniker
+              Id="aef36460-f174-4bde-aced-b9349cc0c81a"
+              LastKnownName="Enter Existing Password"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="66e5623f-449e-4a79-a600-a1cf1a9be1f9"
+        name="Choose a Program"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="90c731ef-97b1-49ba-a044-b226660b8814"
+        name="Choose a Universtiy / College"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f46b6286-8715-4191-b02e-1a6461a52a10"
+        name="See University/ College Location"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7543c0ff-54a9-4231-8351-44840ee181e8"
+        name="Close/ Exit Application"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7f63ac63-c98c-40f1-bc2e-327b672a3a7a"
+        name="See directions to University/ College"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="78b5b618-c783-49a1-ae17-8ca5f3b036ef"
+        name="Create a Nickname"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="78150a5f-e73e-47a2-a872-d07b0e06a585"
+        name="Create a Username"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="48b1a85e-c650-4fa7-8583-45139177c9cd"
+        name="Create a Password"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0225960e-e292-4c9e-a26a-7162a1f1bb15"
+        name="Enter Existing Username"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="aef36460-f174-4bde-aced-b9349cc0c81a"
+        name="Enter Existing Password"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="4e817923-3bc6-4f8b-9e8e-f22c4589ce9c"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="d8e7b931-175a-4b20-845f-3735d74cdc17"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Engineering Universities and Colleges"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="6b31c35b-5347-4e05-9ada-6dbd54c3ebfc"
+              LastKnownName="EUC Finder"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f51404c4-6cf5-48ae-add0-86f5657deae8"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="72f78801-8cb7-44a3-beca-c7cb6aaf0e45"
+                  name="Engineering Universities and Colleges"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="6ac8538b-f908-4c14-903e-7af2f765a053"
+        name="Admin"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="aa8231e9-2a08-4e51-912c-236950ef50b2"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Engineering Universities and Colleges"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="6b31c35b-5347-4e05-9ada-6dbd54c3ebfc"
+              LastKnownName="EUC Finder"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="35cc2916-ff40-477e-ae8b-ae44beb3e101"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="99d8b542-2192-4c95-a86e-5581eed2ac56"
+                  name="Engineering Universities and Colleges"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="6b31c35b-5347-4e05-9ada-6dbd54c3ebfc"
+        name="EUC Finder"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedCommentsInternal>
+          <comment
+            Id="8f340bb7-c06d-4a7d-bc50-1861e28c22b1">
+            <body>Vision Statement:
+
+Engineering Universities and Colleges (EUC) Finder is an application wherein we let users locate and see directions to the of the desired enginireeng university/ college within manila.</body>
+          </comment>
+        </ownedCommentsInternal>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="baf1c50b-2791-4ba0-8870-ccda4b9fc9c3"
+        name="Admin"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c03f0e01-52b3-4989-b3fa-2ddea2aa61e3"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Accept a User"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f5f335f0-150a-4d9e-ac26-cae7ef0946b1"
+              LastKnownName="Accept a User"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9d2ba3d6-6a90-4e81-a21e-6ffdff2b2d8a"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2be84343-6818-4314-a02e-54d08918cf7b"
+                  name="Accept a User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2f14f3df-fc68-4a85-955a-c65e7c2ed11a"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Remove a User"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="10a6e680-0953-42f5-9576-e7ee0602eaf8"
+              LastKnownName="Remove a User"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="126e4cf1-5a0b-4862-9ebf-c3b72a025c9e"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bf2df82d-2c37-4f60-96fc-9e7d7ed8eb75"
+                  name="Remove a User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a9b7ad55-1bf3-400b-b69b-9115b2280d5a"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Update Database"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2e67d30a-ce5b-481c-b1ce-2a65f5077b81"
+              LastKnownName="Update Database"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0465f8be-366d-4ec9-b159-a6a5f7325ba6"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cb0461d5-2733-4c8e-a4e3-be0e9038a7f5"
+                  name="Update Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c6e89973-e15e-406c-ba81-9f11a70e5c06"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Update Application"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a040944e-dfc5-4ccd-9eda-7fb8f10a291a"
+              LastKnownName="Update Application"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4567717b-c4ed-41f8-b1c7-a22c2e76f500"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5b367207-a350-4286-aea5-416eba68748e"
+                  name="Update Application"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="68d1c45e-12af-4c8c-9b00-ef4f43ff0c14"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Remove Application"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="26162757-621c-43ae-b254-4eba7e934667"
+              LastKnownName="Remove Application"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="67e169af-7f99-4ae0-8a6e-43acf99f0a5c"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3adc953e-1b91-4bd7-8c8c-c3db6ededa0a"
+                  name="Remove Application"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f5f335f0-150a-4d9e-ac26-cae7ef0946b1"
+        name="Accept a User"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="58682011-eb63-435f-925c-b6176b3878ee">
+            <useCaseMoniker
+              Id="05c5e827-97d7-4ad7-bb56-ce4cf85b4732"
+              LastKnownName="Register User's Nickname"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </dependency>
+          <dependency
+            Id="ff726964-6153-4205-9f2a-713c5973f5dd">
+            <useCaseMoniker
+              Id="64539c54-7e00-4204-913f-dfd0d30cfdee"
+              LastKnownName="Register User's Username"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </dependency>
+          <dependency
+            Id="6035239e-9d9e-41bc-8d43-40c1293dd351">
+            <useCaseMoniker
+              Id="7fcd7975-3db4-4f93-b296-67f896e24dd0"
+              LastKnownName="Register User's Password"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="10a6e680-0953-42f5-9576-e7ee0602eaf8"
+        name="Remove a User"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="ab9b2365-3b0b-49bc-b9be-6be76d4b7b2c">
+            <useCaseMoniker
+              Id="cd19cf84-d3ae-48e5-9f03-87802e607c14"
+              LastKnownName="o"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2e67d30a-ce5b-481c-b1ce-2a65f5077b81"
+        name="Update Database"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="77e7bf06-725e-460d-b428-3caccf1c9b5b">
+            <useCaseMoniker
+              Id="3434fc07-41d2-4e92-bde1-3976387d0579"
+              LastKnownName="Add Data"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </dependency>
+          <dependency
+            Id="73572462-1fbc-4e73-9d43-0a71748a1c13">
+            <useCaseMoniker
+              Id="c03c4cc7-1f8d-4cc8-82e2-09f1b2caaa15"
+              LastKnownName="Remove Data"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a040944e-dfc5-4ccd-9eda-7fb8f10a291a"
+        name="Update Application"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="758bb4d4-827a-4526-95bc-c65f28532acf">
+            <useCaseMoniker
+              Id="844c6074-fc24-46f0-8f0a-3efb35f7711b"
+              LastKnownName="Add Feature"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </dependency>
+          <dependency
+            Id="7da2acf1-8c16-47be-b75f-1b6625ba8213">
+            <useCaseMoniker
+              Id="bcb220c0-06d0-4603-b272-b93d4a2c47d9"
+              LastKnownName="Remove Feature"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </dependency>
+          <dependency
+            Id="e5d00936-f2e1-43d0-bb96-7216743d0c6e">
+            <useCaseMoniker
+              Id="60b459b6-d839-46b4-b10f-216caad8fb5b"
+              LastKnownName="Change Applicaiton"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="26162757-621c-43ae-b254-4eba7e934667"
+        name="Remove Application"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="aa0aa683-2dc6-48d6-babd-b2acecc26547">
+            <useCaseMoniker
+              Id="4375dd84-5aba-4ec1-ab60-0ded03dcca36"
+              LastKnownName="Delete Application"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="64539c54-7e00-4204-913f-dfd0d30cfdee"
+        name="Register User's Username"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7fcd7975-3db4-4f93-b296-67f896e24dd0"
+        name="Register User's Password"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="05c5e827-97d7-4ad7-bb56-ce4cf85b4732"
+        name="Register User's Nickname"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3434fc07-41d2-4e92-bde1-3976387d0579"
+        name="Add Data"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c03c4cc7-1f8d-4cc8-82e2-09f1b2caaa15"
+        name="Remove Data"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="844c6074-fc24-46f0-8f0a-3efb35f7711b"
+        name="Add Feature"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bcb220c0-06d0-4603-b272-b93d4a2c47d9"
+        name="Remove Feature"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="60b459b6-d839-46b4-b10f-216caad8fb5b"
+        name="Change Applicaiton"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cd19cf84-d3ae-48e5-9f03-87802e607c14"
+        name="o"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4375dd84-5aba-4ec1-ab60-0ded03dcca36"
+        name="Delete Application"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="54e517c9-7003-44a8-a068-6c9e691f9344"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="74dbba9e-0577-4cf2-bc46-6b7d3da40c5b"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Register"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="905bb51b-707d-47c3-b055-8cf7da86c736"
+              LastKnownName="Log In"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3105da54-204d-4543-9129-9e642413a9ea"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="61e0f10e-7035-4830-84c9-92705318c7cb"
+                  name="Register"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ed5932a6-52db-4d36-982f-d7b444553fbf"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Run Application"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="24b28b19-c38f-42d2-bb3e-f106b1b3f390"
+              LastKnownName="Go to Main Menu"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="43d95157-77c3-4ab5-96e3-464747a7a73f"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a5db897f-1f1a-4c1b-8ce5-93ef3b54799e"
+                  name="Run Application"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="65593faa-1c83-4b25-946c-5f74c51ecdef"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Register"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5504c082-e8fe-4bf3-9b20-2f1215a53acc"
+              LastKnownName="Register"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="22ef0b69-ad71-4a18-8ed9-f4f1377e862c"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="66016ad8-59ae-4a5e-a1ec-5d5b1a118d14"
+                  name="Register"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4a76c5e9-a4db-430c-af6a-58651ef55f99"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Locate University/ College"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9eef4090-fa0d-4b90-9935-407152a327c4"
+              LastKnownName="Locate University/ College"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c5ef5843-bd79-4ef8-b4d0-8ac2990a2cf0"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ec77d95c-c03d-461b-8681-25f4a35f013d"
+                  name="Locate University/ College"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="190dc733-4306-4369-afc8-91d068aa6fe2"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="About"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b4d2906a-07c9-476e-93b4-0b5a6298025c"
+              LastKnownName="About"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ec066093-dc2a-4739-b83b-b2f121b73fee"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2c94c22b-52fb-4ad6-8c2e-b8e94d2494b5"
+                  name="About"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="905bb51b-707d-47c3-b055-8cf7da86c736"
+        name="Log In"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="d24c59f5-1910-4ed9-bf39-df55573b1ad0">
+            <useCaseMoniker
+              Id="dfadabe6-f4fd-437a-8261-a632abf5256b"
+              LastKnownName="Log In"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </extend>
+          <extend
+            Id="b3de8996-d1ec-4730-b997-9ef82d183125">
+            <useCaseMoniker
+              Id="7d7bdfa8-d1c1-4dc8-ba31-d94d449548ae"
+              LastKnownName="Locate University/ College"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </extend>
+          <extend
+            Id="9d3266c5-af93-45ab-b3ab-48db7a85a06b">
+            <useCaseMoniker
+              Id="2878a5e2-ead3-42c2-b29d-ca39a304c116"
+              LastKnownName="Locate University/ College"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a9aafa88-154f-4d8e-9722-a9a18969f326"
+        name="UseCase2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="12904d7b-4ab9-4521-93b9-db01516f6311"
+        name="UseCase3"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4dfaf394-a98a-4fda-aa57-d71e1b61d594"
+        name="UseCase4"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dfadabe6-f4fd-437a-8261-a632abf5256b"
+        name="Log In"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9eef4090-fa0d-4b90-9935-407152a327c4"
+        name="Locate University/ College"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="369e262e-87d5-4c37-8786-646ddef03bcd">
+            <useCaseMoniker
+              Id="9f931d7c-203d-4945-b828-f59262141033"
+              LastKnownName="View Engineering Programs"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </include>
+          <include
+            Id="6438ea5e-e8a8-4e3c-80b7-36342c785c91">
+            <useCaseMoniker
+              Id="79653fb8-e1eb-46ca-81d9-9d6421c5b576"
+              LastKnownName="T"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </include>
+          <include
+            Id="9719a349-540e-4ff3-8a90-1e359b00dfc4">
+            <useCaseMoniker
+              Id="e22e8baa-5749-4be2-9de5-75ec5c411324"
+              LastKnownName="View Distance"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </include>
+          <include
+            Id="4af436f5-be76-4c3e-9f35-29fa8d81865b">
+            <useCaseMoniker
+              Id="840a4486-5947-486f-bf7a-73a883c5eca0"
+              LastKnownName="View Address"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </include>
+          <include
+            Id="9de2d1bf-6f05-4c50-a793-b4cfa9b73a19">
+            <useCaseMoniker
+              Id="5446ffa0-aad3-47b2-86ae-748bd209ae4e"
+              LastKnownName="Clear Overlays"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </include>
+          <include
+            Id="4653526c-28a1-48df-84c4-f7db83a2f1f3">
+            <useCaseMoniker
+              Id="4bcc5e15-cf42-4ecd-8080-a0ecea9c311c"
+              LastKnownName="View Latititude : Longitude"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="858b824f-d156-4eaa-ac10-33d2f61efcbc"
+        name="Admin"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="3f069d69-3175-4612-8c7c-7e55e2b0c465"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Maintain Record"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c09ee07b-e08f-4942-bacd-af8b5d949cd8"
+              LastKnownName="Manage Accounts"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5507cae4-74a7-48a2-9c7c-e8f68b38c2bc"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d4cea711-f429-433a-b20d-5106330c4290"
+                  name="Maintain Record"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c09ee07b-e08f-4942-bacd-af8b5d949cd8"
+        name="Manage Accounts"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="9fc50e51-2c7d-415c-af67-f7b659e35d68">
+            <useCaseMoniker
+              Id="5519e671-08b8-41f9-bf27-56596fc09a66"
+              LastKnownName="Check Registered Users"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </include>
+          <include
+            Id="afcdecbe-c06d-4636-8633-84a450d76b8f">
+            <useCaseMoniker
+              Id="6db38a34-3720-417a-b882-2cc78b50ca74"
+              LastKnownName="Compare Registered Users' Credentials"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ef700e8b-1885-4b26-a9f5-bdbf844af75c"
+        name="Locate University/ College"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="130240b8-0c1e-45b4-a0da-5eddf8678e6b"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="59178c3c-842f-4079-8361-faea9e090cf5"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Run Application"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="24b28b19-c38f-42d2-bb3e-f106b1b3f390"
+              LastKnownName="Go to Main Menu"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="22a20a4a-6f13-41b8-9cee-b456fff0e78f"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="51aafc1e-07a6-4848-b543-b2762564d69d"
+                  name="Run Application"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="24b28b19-c38f-42d2-bb3e-f106b1b3f390"
+        name="Go to Main Menu"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="6e2bdc15-ffe2-46ab-b090-cd5d8f4c4184">
+            <useCaseMoniker
+              Id="ffb74ebc-3c82-4f06-94c6-b6af3031c1a9"
+              LastKnownName="Select Command"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ffb74ebc-3c82-4f06-94c6-b6af3031c1a9"
+        name="Select Command"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="75509729-eab8-4b40-9813-cf6d676b3e9b"
+        name="Admin Process"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="3a689fb6-16a0-4b13-99c1-b251f7895349"
+            name="Show Some University/ College Info" />
+          <enumerationLiteral
+            Id="73a7a10d-7c86-4f35-8e2b-c8f1c8790ad2"
+            name="Save User Credentials" />
+          <enumerationLiteral
+            Id="c44765dc-1e43-4a3c-94ae-a846d7fe5756"
+            name="Show University/ College Location" />
+          <enumerationLiteral
+            Id="5fc96b42-6080-4a26-a61c-5c7452c53803"
+            name="Show Directions to University/ College" />
+          <enumerationLiteral
+            Id="35e46da5-4996-4342-8dca-951a0535ceb5"
+            name="Create File" />
+          <enumerationLiteral
+            Id="19d593c7-c990-4722-bbb0-75b6c313bfc7"
+            name="Check User's Log In" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="eb0661dc-3610-4298-858b-392ef121b7d2"
+        name="User"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="d94885e2-b92c-4ac1-bfbc-1aea0290c7fc"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="User Process"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="2f658106-1c03-4488-8521-b367b10db22c"
+              LastKnownName="User Process"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d4e1dcbe-f0a7-495f-8925-0e159a691e4c"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9828b01e-b58d-4c69-95e3-684a531b5708"
+                  name="User Process"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="b049e3ac-3fd7-49a9-b1ef-1d498dbd48c5"
+            name="Register"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f460a2dc-e399-4a15-8a2b-0fe2e78c6bcd"
+            name="Log In"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="eb3e5014-0a8d-417d-9046-31edc1d5b7bd"
+            name="Locate University"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="85e0b088-4758-40e7-b4ae-d6d1b1ebfa57"
+            name="Go to Main Menu"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ba5793db-9ed5-4be0-bc67-e7b94f8a5f95"
+        name="Admin"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="6539b140-7317-4185-81c6-2ccd57bdc293"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Admin Process"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="75509729-eab8-4b40-9813-cf6d676b3e9b"
+              LastKnownName="Admin Process"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="172f1818-2988-438f-b985-c3f15d2baeba"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="136da5b0-3fbf-4379-a107-89164d32339c"
+                  name="Admin Process"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="74038a23-25e5-4ede-8638-a08a9b07fda5"
+            name="Maintain Record"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="afd3ba21-a5e6-4125-89f7-27fe1483c172"
+            name="Locate University/ College"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="2f658106-1c03-4488-8521-b367b10db22c"
+        name="User Process"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="2b183180-c9da-4b93-bf40-a768e53321b0"
+            isDerived="false"
+            sourceEndRoleName="User Process"
+            targetEndRoleName="Admin"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ba5793db-9ed5-4be0-bc67-e7b94f8a5f95"
+              LastKnownName="Admin"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6cb9d0fe-f809-4a97-ad8f-f0779782a59d"
+                  name="User Process"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d3ddf1ad-6306-4aa3-8694-768fa1c4e9eb"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="5e01c66b-6db1-4761-9020-ef5ec38ef001"
+            name="See University/ College Location" />
+          <enumerationLiteral
+            Id="af95299c-2cc8-4292-b4d6-334a419853c5"
+            name="See Directions to University/ College" />
+          <enumerationLiteral
+            Id="4ffdd5ce-d695-4816-bae9-152c51418c2d"
+            name="Select a University/ College" />
+          <enumerationLiteral
+            Id="0205822d-543d-48d3-8353-5ac64bcdfba9"
+            name="Enter Credentials" />
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="03abf33e-94a7-413f-94b4-a5ae1ee77fad"
+        name="Application"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="52d6958e-a1fd-4aca-99b9-25e96420c7a3"
+        name="Admin"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="b1a71d0b-d455-43af-bade-424c48901391"
+            isDerived="false"
+            sourceEndRoleName="Admin"
+            targetEndRoleName="Application"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9f4dec97-b84d-4fd8-aa9a-5c242823e6e7"
+              LastKnownName="Application"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="61899207-727c-4bc1-bc51-a8a078cc873f"
+                  name="Admin"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3a6bc253-ab8d-4645-ad66-5a3466e14072"
+                  name="Application"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="376bc609-6686-4161-bb06-dde4e29a1139"
+            name="Maintain Record"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9cd02b68-b883-4437-879f-542ba7ba97b8"
+            name="Locate University/ College"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="51ae3662-b930-4204-b39a-de9102fc251f"
+        name="User"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="88baa125-ab67-44f4-9abd-c7b7bf23baab"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Application"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9f4dec97-b84d-4fd8-aa9a-5c242823e6e7"
+              LastKnownName="Application"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d0b9375d-45e5-4ebd-b4e8-d4c5a01536a1"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="961767c2-6c8d-4656-9585-49a418799df4"
+                  name="Application"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="868729cc-13b4-4a82-aa6f-edf0f36b328a"
+            name="Log In"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8216dcd9-cc30-456c-83e3-338184d05a59"
+            name="Register"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7d1e31cb-c1ef-4611-996d-e6d2b3828983"
+            name="Locate University/ College"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="094dd41f-0bad-49d2-a200-22b2c1fd4698"
+            name="Go to Main Menu"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9f4dec97-b84d-4fd8-aa9a-5c242823e6e7"
+        name="Application"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="10520b40-f6a0-481d-91c6-fd299cfb928c"
+            name="Accept User Command"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e834735b-6000-4ae2-8699-f928fbd1a681"
+            name="Accept Admin Command"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d293dabe-df1f-422a-87d0-e765eaf9955a"
+            name="Process Commands"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9a600668-318a-4442-888b-d38a8b019d04"
+        name="Internet Connection"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="f589c6eb-ab3c-4cee-97a3-b38150182dd6"
+            isDerived="false"
+            sourceEndRoleName="Internet Connection"
+            targetEndRoleName="Application"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="9f4dec97-b84d-4fd8-aa9a-5c242823e6e7"
+              LastKnownName="Application"
+              LastKnownLocation="EUC Finder Model.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a9ad2845-f7ce-4494-8759-81999d966bf2"
+                  name="Internet Connection"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="004766f9-bfce-4654-a67f-c560ad9d195b"
+                  name="Application"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="02312a3c-c5b3-479d-94f3-1c74b3f25329"
+            name="Provide Map"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9f931d7c-203d-4945-b828-f59262141033"
+        name="View Engineering Programs"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="085b3ae4-d0be-4a7b-b95a-370ed43df9a3"
+        name="See Distance"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="79653fb8-e1eb-46ca-81d9-9d6421c5b576"
+        name="T"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e22e8baa-5749-4be2-9de5-75ec5c411324"
+        name="View Distance"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="72dec91b-bd2e-4909-abbc-7eeb0855b127">
+            <useCaseMoniker
+              Id="3b3d6a4e-2c80-4996-936b-695575044625"
+              LastKnownName="View Route"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="840a4486-5947-486f-bf7a-73a883c5eca0"
+        name="View Address"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="b135f984-7763-4df1-9320-f179a2e94fd0">
+            <useCaseMoniker
+              Id="533fbfde-8e89-4274-a318-3bde1a55b8e6"
+              LastKnownName="View Location"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </include>
+          <include
+            Id="eb731528-89ad-4f91-b281-5de5750abcab">
+            <useCaseMoniker
+              Id="3b3d6a4e-2c80-4996-936b-695575044625"
+              LastKnownName="View Route"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5446ffa0-aad3-47b2-86ae-748bd209ae4e"
+        name="Clear Overlays"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7d7bdfa8-d1c1-4dc8-ba31-d94d449548ae"
+        name="Locate University/ College"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2878a5e2-ead3-42c2-b29d-ca39a304c116"
+        name="Locate University/ College"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5504c082-e8fe-4bf3-9b20-2f1215a53acc"
+        name="Register"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b4d2906a-07c9-476e-93b4-0b5a6298025c"
+        name="About"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="55cc0c23-e48e-451f-bd62-30850c30d3d9"
+        name="Register User"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4bcc5e15-cf42-4ecd-8080-a0ecea9c311c"
+        name="View Latititude : Longitude"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="cf2e0d3c-6322-4e5e-9661-6d85c34dad2a">
+            <useCaseMoniker
+              Id="533fbfde-8e89-4274-a318-3bde1a55b8e6"
+              LastKnownName="View Location"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </include>
+          <include
+            Id="39788479-0ca6-4fac-8af5-ce69c096f1b0">
+            <useCaseMoniker
+              Id="3b3d6a4e-2c80-4996-936b-695575044625"
+              LastKnownName="View Route"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="533fbfde-8e89-4274-a318-3bde1a55b8e6"
+        name="View Location"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3b3d6a4e-2c80-4996-936b-695575044625"
+        name="View Route"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="681d901f-6237-42ab-ad13-8b437f76ec8d"
+        name="Save Credentials"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="403e9fee-c1e1-4280-a561-ef65530a9072">
+            <useCaseMoniker
+              Id="55cc0c23-e48e-451f-bd62-30850c30d3d9"
+              LastKnownName="Register User"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d586cb16-69c5-41ac-8035-da3fb7f1733e"
+        name="Accept User's Log In"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6db38a34-3720-417a-b882-2cc78b50ca74"
+        name="Compare Registered Users' Credentials"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="b33b9b76-0d18-4f5a-ad4c-ec2118b4cdb5">
+            <useCaseMoniker
+              Id="d586cb16-69c5-41ac-8035-da3fb7f1733e"
+              LastKnownName="Accept User's Log In"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </include>
+          <include
+            Id="e8f4a880-d0c1-4cd0-bf9f-d97c4e3fb462">
+            <useCaseMoniker
+              Id="681d901f-6237-42ab-ad13-8b437f76ec8d"
+              LastKnownName="Save Credentials"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5519e671-08b8-41f9-bf27-56596fc09a66"
+        name="Check Registered Users"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="fa32d3c7-624a-4660-b9f9-703030cc7127">
+            <useCaseMoniker
+              Id="6db38a34-3720-417a-b882-2cc78b50ca74"
+              LastKnownName="Compare Registered Users' Credentials"
+              LastKnownLocation="EUC Finder Model.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

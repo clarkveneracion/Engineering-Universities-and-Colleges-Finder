@@ -1,0 +1,16 @@
+C:\Users\jonas.tan\Computer Engineer\2nd Year\COE114L\EUC Finder (Group III Project)\EUC Finder\EUC Finder BusinessLogic\bin\Debug\EUC Finder BusinessLogic.exe.config
+C:\Users\jonas.tan\Computer Engineer\2nd Year\COE114L\EUC Finder (Group III Project)\EUC Finder\EUC Finder BusinessLogic\bin\Debug\EUC Finder BusinessLogic.exe
+C:\Users\jonas.tan\Computer Engineer\2nd Year\COE114L\EUC Finder (Group III Project)\EUC Finder\EUC Finder BusinessLogic\bin\Debug\EUC Finder BusinessLogic.pdb
+C:\Users\jonas.tan\Computer Engineer\2nd Year\COE114L\EUC Finder (Group III Project)\EUC Finder\EUC Finder BusinessLogic\bin\Debug\EUC Finder DataAccess.exe
+C:\Users\jonas.tan\Computer Engineer\2nd Year\COE114L\EUC Finder (Group III Project)\EUC Finder\EUC Finder BusinessLogic\bin\Debug\EUC Finder DataAccess.pdb
+C:\Users\jonas.tan\Computer Engineer\2nd Year\COE114L\EUC Finder (Group III Project)\EUC Finder\EUC Finder BusinessLogic\obj\Debug\EUC Finder BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\jonas.tan\Computer Engineer\2nd Year\COE114L\EUC Finder (Group III Project)\EUC Finder\EUC Finder BusinessLogic\obj\Debug\EUC Finder BusinessLogic.exe
+C:\Users\jonas.tan\Computer Engineer\2nd Year\COE114L\EUC Finder (Group III Project)\EUC Finder\EUC Finder BusinessLogic\obj\Debug\EUC Finder BusinessLogic.pdb
+C:\Users\jonas.tan\Computer Engineer\2nd Year\COE114L\EUC Finder (Group III Project)\EUC Finder (Group III Project)\EUC Finder\EUC Finder BusinessLogic\bin\Debug\EUC Finder BusinessLogic.exe.config
+C:\Users\jonas.tan\Computer Engineer\2nd Year\COE114L\EUC Finder (Group III Project)\EUC Finder (Group III Project)\EUC Finder\EUC Finder BusinessLogic\bin\Debug\EUC Finder BusinessLogic.exe
+C:\Users\jonas.tan\Computer Engineer\2nd Year\COE114L\EUC Finder (Group III Project)\EUC Finder (Group III Project)\EUC Finder\EUC Finder BusinessLogic\bin\Debug\EUC Finder BusinessLogic.pdb
+C:\Users\jonas.tan\Computer Engineer\2nd Year\COE114L\EUC Finder (Group III Project)\EUC Finder (Group III Project)\EUC Finder\EUC Finder BusinessLogic\bin\Debug\EUC Finder DataAccess.exe
+C:\Users\jonas.tan\Computer Engineer\2nd Year\COE114L\EUC Finder (Group III Project)\EUC Finder (Group III Project)\EUC Finder\EUC Finder BusinessLogic\bin\Debug\EUC Finder DataAccess.pdb
+C:\Users\jonas.tan\Computer Engineer\2nd Year\COE114L\EUC Finder (Group III Project)\EUC Finder (Group III Project)\EUC Finder\EUC Finder BusinessLogic\obj\Debug\EUC Finder BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\jonas.tan\Computer Engineer\2nd Year\COE114L\EUC Finder (Group III Project)\EUC Finder (Group III Project)\EUC Finder\EUC Finder BusinessLogic\obj\Debug\EUC Finder BusinessLogic.exe
+C:\Users\jonas.tan\Computer Engineer\2nd Year\COE114L\EUC Finder (Group III Project)\EUC Finder (Group III Project)\EUC Finder\EUC Finder BusinessLogic\obj\Debug\EUC Finder BusinessLogic.pdb

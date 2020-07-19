@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="3895e912-7403-4223-9203-d4f21e19e00b" name="User" linkedPackageId="fbf8f056-8a4e-45db-80c7-2a11aa417760" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="85f55eee-1046-4f48-9fc3-d4c15840dcd0" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="54e517c9-7003-44a8-a068-6c9e691f9344" />
+        <targetEnds>
+          <association Id="6d616b9e-cc8b-49da-a126-5455b7a8786c" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Register" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d601b3a1-c2e6-4528-b1b6-c3884d7b1f76" LastKnownName="Log In" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="90295fa6-bca0-45a9-a812-40b4eeb1dd97" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3105da54-204d-4543-9129-9e642413a9ea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c0473c11-6e89-49d3-a377-e0d8cdbfb699" name="Register" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="61e0f10e-7035-4830-84c9-92705318c7cb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="74dbba9e-0577-4cf2-bc46-6b7d3da40c5b" />
+          </association>
+          <association Id="90b75331-555e-42b5-ae91-0d9c1a5d4242" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Register" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="dadc381a-c208-4d46-a8aa-ae0a9703ae58" LastKnownName="Register" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="414c4699-9ff5-4f71-b545-3116c32cec8a" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="22ef0b69-ad71-4a18-8ed9-f4f1377e862c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e24c8ac9-97a1-49a2-a366-8efb0b1b928e" name="Register" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="66016ad8-59ae-4a5e-a1ec-5d5b1a118d14" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="65593faa-1c83-4b25-946c-5f74c51ecdef" />
+          </association>
+          <association Id="8e6a88b5-453d-4c54-8f4d-ca4eb60cafef" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Locate University/ College" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c10a0acd-0603-416f-8afd-db7f80052fcf" LastKnownName="Locate University/ College" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d9e9203a-df81-49ba-9ea8-096adc1c6869" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c5ef5843-bd79-4ef8-b4d0-8ac2990a2cf0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ad75cc63-4814-483c-834a-abe591e575ef" name="Locate University/ College" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ec77d95c-c03d-461b-8681-25f4a35f013d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4a76c5e9-a4db-430c-af6a-58651ef55f99" />
+          </association>
+          <association Id="6504547f-f1db-445f-ab35-fe559c7d560e" isDerived="false" sourceEndRoleName="User" targetEndRoleName="About" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2456049e-fd8d-4b5a-bdca-0c2b41255817" LastKnownName="About" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="92e168df-d4d5-4a45-94d7-67510ac4fd5e" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ec066093-dc2a-4739-b83b-b2f121b73fee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="50795796-357c-4298-8664-48e61e204190" name="About" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2c94c22b-52fb-4ad6-8c2e-b8e94d2494b5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="190dc733-4306-4369-afc8-91d068aa6fe2" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d601b3a1-c2e6-4528-b1b6-c3884d7b1f76" name="Log In" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="905bb51b-707d-47c3-b055-8cf7da86c736" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c10a0acd-0603-416f-8afd-db7f80052fcf" name="Locate University/ College" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9eef4090-fa0d-4b90-9935-407152a327c4" />
+        <additions>
+          <include Id="ea9e04f9-1b95-43f5-9061-d3e81fd53885">
+            <useCaseMoniker Id="dc13db33-4693-4ac2-8255-99939a4c75ae" LastKnownName="View Engineering Programs" />
+            <elementDefinition Id="369e262e-87d5-4c37-8786-646ddef03bcd" />
+          </include>
+          <include Id="64fc1fda-57d8-4c0e-a44b-53fd4a712b6c">
+            <useCaseMoniker Id="0dac3d7d-5635-427b-b6ba-2b02f177b870" LastKnownName="View Distance" />
+            <elementDefinition Id="9719a349-540e-4ff3-8a90-1e359b00dfc4" />
+          </include>
+          <include Id="b3a35925-47a2-49f5-91db-1aa182539f77">
+            <useCaseMoniker Id="22e948a6-647a-478b-a8d5-ff78f43ae556" LastKnownName="View Address" />
+            <elementDefinition Id="4af436f5-be76-4c3e-9f35-29fa8d81865b" />
+          </include>
+          <include Id="bda67de3-7269-4abe-973e-f5b562f052d4">
+            <useCaseMoniker Id="530202c7-2745-470f-abf0-a5c490e9c7de" LastKnownName="Clear Overlays" />
+            <elementDefinition Id="9de2d1bf-6f05-4c50-a793-b4cfa9b73a19" />
+          </include>
+          <include Id="a7a46288-5c0c-4363-8bec-7c0ffa1fed66">
+            <useCaseMoniker Id="b215f8a0-01b4-4f98-b7be-e86c5e3504e9" LastKnownName="View Latititude : Longitude" />
+            <elementDefinition Id="4653526c-28a1-48df-84c4-f7db83a2f1f3" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dc13db33-4693-4ac2-8255-99939a4c75ae" name="View Engineering Programs" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f931d7c-203d-4945-b828-f59262141033" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0dac3d7d-5635-427b-b6ba-2b02f177b870" name="View Distance" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e22e8baa-5749-4be2-9de5-75ec5c411324" />
+        <additions>
+          <include Id="de9e4180-f251-4aa6-83f1-308a128c7241">
+            <useCaseMoniker Id="befa1afc-6f43-4ec9-ad5e-456affeadbda" LastKnownName="View Route" />
+            <elementDefinition Id="72dec91b-bd2e-4909-abbc-7eeb0855b127" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="22e948a6-647a-478b-a8d5-ff78f43ae556" name="View Address" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="840a4486-5947-486f-bf7a-73a883c5eca0" />
+        <additions>
+          <include Id="8c802561-28cc-492b-aa29-eb348a071df8">
+            <useCaseMoniker Id="55269cc7-2b64-4f9c-b6da-202876ed09a8" LastKnownName="View Location" />
+            <elementDefinition Id="b135f984-7763-4df1-9320-f179a2e94fd0" />
+          </include>
+          <include Id="c612a994-b5cd-4500-8506-473c49fa0b67">
+            <useCaseMoniker Id="befa1afc-6f43-4ec9-ad5e-456affeadbda" LastKnownName="View Route" />
+            <elementDefinition Id="eb731528-89ad-4f91-b281-5de5750abcab" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="530202c7-2745-470f-abf0-a5c490e9c7de" name="Clear Overlays" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5446ffa0-aad3-47b2-86ae-748bd209ae4e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dadc381a-c208-4d46-a8aa-ae0a9703ae58" name="Register" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5504c082-e8fe-4bf3-9b20-2f1215a53acc" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2456049e-fd8d-4b5a-bdca-0c2b41255817" name="About" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b4d2906a-07c9-476e-93b4-0b5a6298025c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b215f8a0-01b4-4f98-b7be-e86c5e3504e9" name="View Latititude : Longitude" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4bcc5e15-cf42-4ecd-8080-a0ecea9c311c" />
+        <additions>
+          <include Id="de980f5a-d769-4c30-8d7f-c77ef7da51b3">
+            <useCaseMoniker Id="55269cc7-2b64-4f9c-b6da-202876ed09a8" LastKnownName="View Location" />
+            <elementDefinition Id="cf2e0d3c-6322-4e5e-9661-6d85c34dad2a" />
+          </include>
+          <include Id="83e30818-1379-4b37-b1d6-c8dc14c6e773">
+            <useCaseMoniker Id="befa1afc-6f43-4ec9-ad5e-456affeadbda" LastKnownName="View Route" />
+            <elementDefinition Id="39788479-0ca6-4fac-8af5-ce69c096f1b0" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="55269cc7-2b64-4f9c-b6da-202876ed09a8" name="View Location" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="533fbfde-8e89-4274-a318-3bde1a55b8e6" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="befa1afc-6f43-4ec9-ad5e-456affeadbda" name="View Route" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3b3d6a4e-2c80-4996-936b-695575044625" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="fbf8f056-8a4e-45db-80c7-2a11aa417760" name="EUC Finder Model">
+    <elementDefinition Id="82e7b04b-e03b-4588-8365-f4a9dfb23eb6" />
+    <profileInstances>
+      <packageHasProfileInstances Id="390cfb85-a919-40fd-ab51-2cd96199bbd8">
+        <profileInstance Id="ebc2dbc4-a0c7-4673-a489-82b56a2977c9" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="97a24be3-8875-41b3-a2f2-1e25b42d163f">
+        <profileInstance Id="e9d158a6-a155-437e-aa7d-13030fb5b87a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
